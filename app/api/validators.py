@@ -8,10 +8,10 @@ from app.crud.charity_project import charityproject_crud
 from app.models import CharityProject
 
 PROJECT_NOT_FOUND = 'Проект не найден.'
-PROJECT_EXISTS = 'Проект с таким именем уже существует.'
-FORBIDDEN_UPDATE = 'Закрытый проект нельзя редактировать.'
+PROJECT_EXISTS = 'Проект с таким именем уже существует!'
+FORBIDDEN_UPDATE = 'Закрытый проект нельзя редактировать!'
 INVESTED_RPOJECT_DELETION = (
-    'Нельзя удалить проект, в который уже были инвестированы средства.'
+    'В проект были внесены средства, не подлежит удалению!'
 )
 INVALID_INVESTED_AMOUNT = (
     'Нельзя установить требуемую сумму меньше уже '
