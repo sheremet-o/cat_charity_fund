@@ -8,3 +8,6 @@ class Donation(PreBaseDonationCharity):
         'user.id', name='fk_donation_user_id_user'
     ))
     comment = Column(Text)
+
+    def __repr__(self) -> str:
+        return self.user_id
